@@ -36,5 +36,22 @@
         </div>
 
     </div>
+
+<script>
+
+const apiKey = "e8be1751fc090e5d5b7311ad76745234";
+const apiUrl="https://api.openweathermap.org/data/2.5/weather?units=metric&q=chennai";
+
+async function checkWeather(){
+    const response = await fetch(apiUrl + `&appid=${apiKey}`);
+    var data = await response.json();
+
+    console.log(data);
+}
+
+checkWeather();
+    
+
+</script>
 </body>
 </html>
