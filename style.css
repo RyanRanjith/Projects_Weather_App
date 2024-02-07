@@ -90,3 +90,18 @@ body{
     margin-top: 10px;
     display: none;
 }
+@media only screen and (max-width: 600px) {
+    .card {
+        margin-top: 50px;
+        padding: 30px 25px;
+    }
+
+    .search {
+        flex-direction: column;
+    }
+
+    .search input {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
